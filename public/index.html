@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Formulário de Inscrição</h1>
+    <form id="subscribeForm" class="form">
+      <label>Nome completo
+        <input type="text" id="full_name" required>
+      </label>
+      <label>Data de nascimento
+        <input type="date" id="birthdate" required>
+      </label>
+      <label>Email
+        <input type="email" id="email" required>
+      </label>
+      <label>Gênero
+        <select id="gender">
+          <option value="">Prefiro não informar</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="message"></p>
+
+    <section>
+      <h2>Últimos inscritos</h2>
+      <button id="refresh">Atualizar lista</button>
+      <ul id="list"></ul>
+    </section>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
